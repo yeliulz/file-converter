@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>File Converter</h1>
+    </header>
+    
+    <main>
+        <div class="converter-container">
+            <h2>Convert PDF & Excel to DOCX</h2>
+            
+            <form id="converter-form">
+                <div class="form-group">
+                    <label for="email">Enter your Email:</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="file" id="fileInput" class="form-input" accept=".pdf,.xlsx" style="display: none;">
+                    <div id="drop-area" class="drop-area">
+                        <p>Drag & drop your files here or click to select</p>
+                    </div>
+                </div>
+
+
+
+
+                
+                <button type="submit" class="submit-btn">Convert & Send</button>
+            </form>
+            
+            <p id="message" class="status-message"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 File Converter</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .form-input[type="file"] {
+            display: none;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+
+@import url('var.css');
+
+/* Header Styles */
+header {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+header nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding-bottom: 10px;
+}
+
+header nav a:hover {
+    color: var(--warning-color);
+}
+
+
+/* Main Content Styles */
+label{
+    color: aliceblue;
+}
+
+main {
+    padding: 20px;
+    background-color: var(--background-color);
+    min-height: calc(100vh - 160px);
+}
+
+h1, h2, h3 {
+    color: aliceblue;
+    margin-bottom: 5px;
+    text-align: center;
+    font-style: "roboto";
+}
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-primary);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Drop Area Styles */
+.drop-area {
+    border: 2px dashed var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drop-area.highlight {
+    background-color: var(--light-color);
+}
+
+
+
+form button {
+    width: 100%;
+}
